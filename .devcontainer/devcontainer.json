@@ -1,0 +1,53 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
+{
+  "name": "Container",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "firstdraft/appdev-rails-8-template",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000, 4567, 9292],
+
+  "portsAttributes": {
+    "3000": {
+      "onAutoForward": "silent"
+    },
+    "4567": {
+      "onAutoForward": "silent"
+    },
+    "9292": {
+      "onAutoForward": "silent"
+    }
+  },
+
+  "otherPortsAttributes": {"onAutoForward": "ignore"},
+
+  // A codespace opened from the template ("Use this template → Open in a codespace")
+  // has no repository. Save it to a private repository in the user's own account
+  // before the editor opens, and retry on every attach if that failed. Does
+  // nothing in codespaces that already have an origin remote.
+  "waitFor": "postCreateCommand",
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": ".devcontainer/publish-codespace; gem install rufo && gem install htmlbeautifier",
+
+  // Use 'postAttachCommand' to run commands each time you attach to the container.
+  "postAttachCommand": ".devcontainer/publish-codespace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["vortizhe.simple-ruby-erb",
+                     "mbessey.vscode-rufo",
+                     "aliariff.vscode-erb-beautify",
+                     "setobiralo.erb-commenter",
+                     "firstdraft.terminal-clear",
+                     "-github.copilot-chat"]
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
