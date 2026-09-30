@@ -2,8 +2,8 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>West Parker's Links</title>
 
   <style>
@@ -11,26 +11,25 @@
       border: 1px red dashed;
     }
 
-html {
-    min-height: 100%;
-}
+    html {
+      min-height: 100%;
+    }
 
     body {
-
-color: rgba(0, 0, 0, 1);
-
-a {
-  color: rgba(0, 0, 0, 1);
-}
-
-.item {
-  background-color: rgba(222, 170, 6, 0.95);
-}
-
-      min-heigh: 100%;
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      color: rgba(0, 0, 0, 1);
       background: conic-gradient(from 0deg at 100% 10%, #96745d, #ad8460, #c39463, #d7a766, #e9ba6c, #f7cf7c, #fde6a5, #fffbe9);
+    }
+
+    a {
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
     }
 
     .avatar-image {
@@ -46,11 +45,6 @@ a {
       border-radius: 48px;
       object-fit: cover;
     }
-    
-   .main-container {
-      max-width: 640px;
-      margin: auto;
-    }
 
     .image-row {
       margin-bottom: 20px;
@@ -59,7 +53,7 @@ a {
 
     .name-row {
       margin-bottom: 30px;
-      text-align:center;
+      text-align: center;
     }
 
     .social-icons-row {
@@ -68,18 +62,17 @@ a {
       justify-content: space-around;
     }
 
-.item {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      background-color: rgba(222, 170, 6, 0.95);
+    }
 
-.link-text {
-  text-align: center;
-  flex-grow: 1;
-}
-
-    /* Other declarations */
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
   </style>
 </head>
 
@@ -95,21 +88,10 @@ a {
     </div>
 
     <div class="social-icons-row">
-      <a href="https://github.com/westparker" target="_blank">
-        Github
-      </a>
-
-      <a href="https://www.linkedin.com/in/westleeparker/" target="_blank">
-        LinkedIn
-      </a>
-
-      <a href="https://www.instagram.com/westp77_/" target="_blank">
-        Instagram
-      </a>
-
-      <a href="https://www.INSERT-REAL-LINK" target="_blank">
-        Personal Website - Coming Soon
-      </a>
+      <a href="https://github.com/westparker" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/westleeparker/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/westp77_/" target="_blank">Instagram</a>
+      <a href="https://www.INSERT-REAL-LINK" target="_blank">Personal Website - Coming Soon</a>
     </div> <!-- social-icons-row -->
 
     <div class="links-row">
@@ -131,18 +113,9 @@ a {
         <img src="/thumbnails/amazon.jpg" alt="Amazon shopping links" class="thumbnail">
         <a class="link-text" target="_blank" href="https://www.amazon.com">
           Amazon Shopping Links - Coming Soon
-        </>
+        </a>
       </div>
 
       <div class="item">
         <img src="/thumbnails/amex.jpg" alt="Amex card referral" class="thumbnail">
-        <a class="link-text" target="_blank" href="https://www.amex.com">
-          Link to Amex Card Referral - Coming Soon
-        </aa>
-      </div>
-    </div> <!-- links-row -->
-
-  </div> <!-- main-container -->
-</body>
-
-</html>
+        <a class="link-text" target="_blank"
