@@ -73,3 +73,8 @@
       text-align: center;
       flex-grow: 1;
     }
+
+    .footer-row {
+      margin-top: 30px;
+      text-align: center;
+    }
