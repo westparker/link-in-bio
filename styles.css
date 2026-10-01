@@ -1,8 +1,7 @@
 
-  <style>
-    * {
-      /* border: 1px red dashed; */
-    }
+      /* * {
+  border: 1px red dashed;
+} */
 
     html {
       min-height: 100%;
@@ -74,7 +73,3 @@
       text-align: center;
       flex-grow: 1;
     }
-
-
-
-  </style>
